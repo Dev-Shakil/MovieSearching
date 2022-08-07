@@ -2,7 +2,7 @@ import {createContext, useEffect, useState} from "react";
 
 const AppContext = createContext();
 
-export const API_URL = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}`;
+export const API_URL = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}`;
 const AppProvider = ({children}) => {
     const [isLoading, setIsLoading] = useState(true);
     const [movie, setMovie] = useState([]);
